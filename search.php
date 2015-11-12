@@ -31,10 +31,18 @@
 				{
 					$parsed_contents = $parser->get_string_between($web_contents, "</table><i><b>", "</p>\n");
 				}
+				
 				$final_contents = strip_tags($parsed_contents, '<p></p>');
-				echo "<h1>" . $_POST['title'] . "</h1>";
-				print $final_contents;
-				print $final_url;
+				
+				if (empty($final_contents))
+				{
+					echo "Search returned 0 results";
+				}
+				else
+				{
+					echo "<h1>" . $_POST['title'] . "</h1>";
+					print $final_contents;	
+				}
 			} catch (Exception $e) {
 				print $e;
 			}
