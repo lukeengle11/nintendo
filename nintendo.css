@@ -1,23 +1,30 @@
 body {
-	color: white;
+	color: black;
 	background: linear-gradient(to bottom right, #000060, #cccccc) no-repeat fixed;
 	font-family: "Veranda", Sans-serif;
 	font-size: 1.5em;
 }
-div#intro {
+div.data {
 	padding: 1em;
 	background-color: white;
 	border-style: solid;
 	margin-top: 3em;
 	margin-left: 5%;
+	margin-bottom: 4em;
 	width: 50%;
 	float: left;
-	color: black;
+}
+div.search{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: white;
+	border-style: solid;
+	width: 50%;
 }
 div#nav {
 	margin-top: 2em;
 	float: right;
-	height: 100%;
 	background-color: #f1f1f1;
 }
 img.smimg {
@@ -26,8 +33,6 @@ img.smimg {
 	width: 400px;
 	height: 225px;
 }
-img#snesImg{}
-img#n64Img{}
 ul {
     list-style-type: none;
     margin: 0;
@@ -61,11 +66,14 @@ img.padding {
 	text-align: center;
 }
 h1 {
+	display:block;
+	background-color: white;
+	border-style: solid;
+	padding: .3em;
 	width: 900px;
 	font-size: 32pt;
 	font-weight: bold;
-	margin-left: auto;
-	margin-right:auto;
+	margin-left: 20%;
 	text-align: center;
 }
 img.icon {
@@ -73,10 +81,10 @@ img.icon {
 	height: 300px;
 }
 a{
-	color: red;
+	color: navy;
 }
-a:hover{ color: navy; }
-a:active{ color: white; }
+a:hover{ color: red; }
+a:active{ color: black; }
 a.icon {
 	
 }

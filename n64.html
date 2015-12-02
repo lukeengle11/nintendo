@@ -11,22 +11,31 @@
 		}
 	</style>
 </head>
-<body class="n64">
-	<img src="img/Nintendo_64_Logo.png" alt="n64 logo"/>
-	<h1>Search for an N64 game</h1>
-	<p>
-		<! N64 search info/>
-	</p>
-	<form method="post" action="search.php">
-		<table>
-			<tr>
-				<td><input type="text" name="title"/></td>
-				<td><input type="submit" value="Search"/></td>
-			</tr>
-		</table>
-	</form>
+<body>
+	<div id="nav">
+		<ul>
+			<li><a href="main.html">Home Page</a></li>
+			<li><a href="top_100.php">Top 100 Nintendo Games</a></li>
+			<li><a href="nes.html">Search NES Games</a></li>
+			<li><a href="snes.html">Search SNES Games</a></li>
+			<li><a href="n64.html">Search N64 Games</a></li>
+		</ul>
+	</div>
+	<img class="padding" src="img/Nintendo_64_Logo.png" alt="n64 logo"/>
+	<div class="search">
+		<h2>Search for an N64 game</h2>
+		<p>
+			<! N64 search info/>
+		</p>
+		<form method="post" action="search.php">
+			<table>
+				<tr>
+					<td><input type="text" name="title"/></td>
+					<td><input type="submit" value="Search"/></td>
+				</tr>
+			</table>
+		</form>
+	</div>
 </body>
-<footer>
-	<p><a href="main.html">Back to home page</a></p>
-</footer>
+
 </html>
